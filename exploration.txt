@@ -1,25 +1,48 @@
 -> Take yourself to the mansion directory.
+I created a new directory in my Day 1 folder called lab.  then I cd 
 -> Confirm that you are in fact in that directory.
+/Users/thedavezone/Desktop/Coding-School/wk1/day1/lab/intro_to_command_line/mansion
 -> See what directories are in the mansion. (These directories represent areas you will explore.)
--> Go into the entryway.
+ls -a,  theres a repository, east_wing,  entry_hall, west_wing
+-> Go into the entryway. 
+cd entry_way
 -> What does the entryway contain?
+a repository and a the coat_closet
 -> Go into the coat closet. What's in there?
+fur_coat.txt       leather_jacket.txt
 -> Take your coat off by making a new text file in the coat closet.
+takeoffcoat.txt
 -> From the coat closet, go back to the entryway.
+cd ..
 -> From the entryway, go back to the mansion.
+cd ..
 -> Go to the east wing and see what's in there.
+..            dining_room   guest_bedroom
 -> Go into the dining room and see what's in there.
+..           chair.txt    sandwich.txt table.txt
 -> Remove the sandwich file from the dining room.
+rm -rf sandwich.txt
 -> We need more chairs in the dining room. Create 4 total chairs by copying the chair file. Give the copies names like chair_2, etc.
+cp for copy 
 -> Go from the dining room to the guest bedroom in a single command. What's in the guest bedroom?
+..       bed.txt  desk.txt
 -> Go from the guest bedroom back to the mansion in a single command.
+cd absolute path copied from using the pwd command
 -> Go to the master bedroom in the west wing in a single command.
+cd west_wing/master_bedroom
 -> See what's in the master bedroom. Are there any hidden files or folders?
+a respository, hidden folder: .secret_passage, bed.txt, dresser.txt, mirror.txt, text.txt
 -> Break the mirror by renaming it to smashed_mirror.txt.
+I copied the first one, then removed the original
 -> Create a directory called cardboard_box.
+
 -> Move the smashed_mirror into the cardboard_box.
+mv smashed_mirror.txt cardboard_box
 -> Go into the secret passage. What's in there?
+..                   .family_heirloom.txt
 -> Move the family heirloom up into the master bedroom.
+mv .family_heirloom.txt master_bedroom
 -> Destroy the secret passage.
 -> Go up 2 levels. Where are you now?
+in the mansion
 -> Go back to the mansion.
